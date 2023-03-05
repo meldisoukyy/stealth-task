@@ -1,4 +1,13 @@
 const express = require('express');
+const { logger } = require('./logger.js')
+
 const app = express();
 
-app.listen(3000, () => console.log('Server is listening on port: 3000.'));
+if (process.env.NODE_ENV === "development")
+  app.use(logger());
+
+app.get('/', (req, res) => {
+  res.send('Hello, Friend!');
+});
+
+app.listen(3000);
