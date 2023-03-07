@@ -1,9 +1,10 @@
 const express = require('express');
-const { logger } = require('./logger.js')
+const process = require('process');
+const { logger } = require('./logger.js');
 
 const app = express();
 
-if (process.env.NODE_ENV === "development")
+if (process.env.NODE_ENV === 'development')
   app.use(logger());
 
 app.get('/', (req, res) => {

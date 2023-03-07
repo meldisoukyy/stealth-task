@@ -22,4 +22,4 @@ const logger = () => {
 module.exports = {
   log,
   logger
-}
+};
