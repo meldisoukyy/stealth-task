@@ -10,12 +10,16 @@
     "lint-fix": "eslint . --fix"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "fancy-log": "^2.0.0",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "pg": "^8.10.0",
+    "sequelize": "^6.29.1"
   },
   "devDependencies": {
     "eslint": "^8.35.0",
+    "eslint-plugin-import": "^2.27.5",
     "nodemon": "^2.0.21"
   }
 }
