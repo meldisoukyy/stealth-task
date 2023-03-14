@@ -5,7 +5,8 @@ const express = require('express');
 const app = express();
 
 const logger = require('./logger');
-const v1Routes = require('./v1/routes/index');
+require('./v1/models');
+const v1Routes = require('./v1/routes');
 
 app.use(express.json());
 app.use(logger());
