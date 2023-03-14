@@ -5,6 +5,4 @@ const router = express.Router();
 
 router.use('/tasks', tasksRoutes);
 
-module.exports = {
-  v1Routes: router,
-};
+module.exports = router;

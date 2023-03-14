@@ -19,7 +19,4 @@ const logger = () => {
   return logger;
 };
 
-module.exports = {
-  log,
-  logger
-};
+module.exports = logger;
